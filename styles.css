@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg: #e0e5ec;
+  --text: #2c3e50;
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: var(--bg);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  color: var(--text);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#timer {
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-section input {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: inset 3px 3px 8px var(--shadow-dark), inset -3px -3px 8px var(--shadow-light);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.input-section button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: 5px 5px 15px var(--shadow-dark), -5px -5px 15px var(--shadow-light);
+  transition: all 0.3s ease;
+}
+
+.input-section button:hover {
+  box-shadow: inset 3px 3px 8px var(--shadow-dark), inset -3px -3px 8px var(--shadow-light);
+  background-color: #f1f3f6;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px var(--shadow-dark), -5px -5px 15px var(--shadow-light);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
+  transform: translateY(-2px);
+  background-color: #f1f3f6;
+}
+
+@media (max-width: 500px) {
+  #timer {
+    font-size: 3.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
